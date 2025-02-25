@@ -1,134 +1,15 @@
-.page {
-  min-width: 1440px;
-  display: flex;
-  flex-direction: column;
-  background-color: #ffffff;
-  margin-top: ;
-}
+@import url(../blocks/page.css);
 
-.header {
-  min-width: 1280px;
-  min-height: 210px;
-  border-bottom: 1px solid #21212166;
-}
+@import url(../blocks/header.css);
 
-.header__menubar {
-  width: 1440px;
-  height: 46px;
-}
+@import url(../blocks/profile.css);
 
-.header__logo {
-  padding-left: 673px;
-  padding-right: 673px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  justify-self: center;
-}
+@import url(../blocks/cards.css);
 
-.header__profile {
-  margin-top: 0;
-  margin-bottom: 0;
-}
+@import url(../blocks/button.css);
 
-.header__image {
-  height: 190px;
-  width: 190px;
-  position: absolute;
-  top: 80px;
-  left: 80px;
-}
+@import url(../blocks/footer.css);
 
-.header__list {
-  position: absolute;
-  top: 80px;
-  left: 290px;
-  list-style-type: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
+@import url(../vendor/fonts.css);
 
-//*remember to insert backup fonts *//
-
-.header__title {
-  margin-top: 200pxs;
-  font-family: Poppins;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 32px;
-  letter-spacing: 0%;
-  max-width: 420;
-  max-height: 32;
-}
-
-.header__subtitle {
-  width: 97;
-  height: 16;
-  font-family: Poppins;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 16px;
-  letter-spacing: 0%;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.header__edit-profile {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  opacity: 70%;
-  margin-bottom: 0;
-  margin-top: 114px;
-}
-
-.header__header__favicon {
-}
-
-.button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 149px;
-  height: 52px;
-  padding-top: 18px;
-  padding-right: 32px;
-  padding-bottom: 18px;
-  padding-left: 32px;
-  gap: 8px;
-  border-radius: 8px;
-  position: absolute;
-  top: 218px;
-  right: 80px;
-  color: #ffffff;
-  background-color: #212121;
-}
-
-.button__image {
-  width: 12;
-  height: 12;
-  border-width: 2px;
-}
-
-.header__footer {
-  justify-self: center;
-}
-
-.cards {
-  grid-column: ifr 1fr 1fr;
-  grid-row: 1fr 1fr;
-}
-
-.cards__card {
-}
-
-.cards__grid {
-}
-
-.cards__image {
-  width: 413px;
-  height: 413px;
-}
-
-.cards__description {
-}
+@import url(../vendor/normalize.css);

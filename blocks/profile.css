@@ -1,0 +1,133 @@
+.profile {
+  display: flex;
+  margin-top: 34px;
+  background-color: #fcf5e5;
+}
+
+.profile__image {
+  max-height: 190px;
+  max-width: 190px;
+}
+
+.profile__avatar {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 20px;
+}
+
+.profile__title {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  max-width: 420;
+  max-height: 32;
+}
+
+.profile__subtitle {
+  width: 97;
+  height: 16;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.profile__edit-profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  opacity: 70%;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  margin-bottom: 0;
+  margin-top: 114px;
+  border-style: none;
+  background-color: #fcf5e5;
+}
+
+.profile__edit-profile:hover .profile__favicon {
+  opacity: 100%;
+}
+
+.profile__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  padding-top: 18px;
+  padding-right: 32px;
+  padding-bottom: 18px;
+  padding-left: 32px;
+  gap: 8px;
+  border-radius: 8px;
+  margin-top: auto;
+  margin-left: auto;
+  color: #ffffff;
+  background-color: #212121;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile__favicon {
+  transition: opacity 0.1s ease-in-out 0.3s;
+}
+
+.profile__button__image {
+  width: 12px;
+  height: 12px;
+  border-width: 2px;
+}
+
+.profile__button:hover {
+  opacity: 80%;
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(14, 3, 3, 0.2);
+}
+
+@media screen and (max-width: 550px) {
+  .profile {
+    flex-direction: column;
+    max-width: 288px;
+    align-items: center;
+  }
+  .profile__title {
+    margin-top: 12px;
+    margin-bottom: 6px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    width: 100%;
+  }
+  .profile__subtitle {
+    margin-top: 6px;
+    text-align: center;
+    width: 100%;
+  }
+  .profile__edit-profile {
+    margin: auto;
+    margin-top: 32px;
+    padding-bottom: 20px;
+    width: 100%;
+    flex-shrink: 1;
+  }
+  .profile__button {
+    width: 100%;
+    display: flex;
+    flex-shrink: 1;
+  }
+}

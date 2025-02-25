@@ -1,9 +1,21 @@
 .header {
-  position: relative;
+  border-bottom: 1px solid #21212166;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: #ffffff;
 }
 
 .header__logo {
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-self: center;
+}
+
+.header__profile {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.header__footer {
+  justify-self: center;
 }

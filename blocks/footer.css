@@ -1,0 +1,21 @@
+.footer {
+  padding-bottom: 60px;
+  padding-top: 60px;
+  background-color: #fcf5e5;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__description {
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: #fcf5e5;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  max-width: 104px;
+  max-height: 16px;
+  color: #212121b2;
+}
