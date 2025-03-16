@@ -18,3 +18,6 @@ This project is made so all the elements are displayed correctly on popular scre
 
 Here is a link to a video where I describe different pieces of this project.
 
+https://drive.google.com/file/d/1EO1pbzZ4bdVVx273nMe_A9PayxyeQp3U/view
+
+Thank you for watching my video of explanation.
