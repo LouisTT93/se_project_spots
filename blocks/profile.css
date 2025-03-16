@@ -73,6 +73,7 @@
 }
 
 .profile__edit:hover {
+  cursor: pointer;
   opacity: 100%;
 }
 
@@ -102,6 +103,7 @@
 }
 
 .profile__image-pencil:hover {
+  cursor: pointer;
   opacity: 100%;
 }
 
