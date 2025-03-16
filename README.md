@@ -1,13 +1,14 @@
 # Project 3: Spots
 
-* Here is the link to the project on github. 
-https://github.com/LouisTT93/se_project_spots
+
 
 ### Overview  
 
 * Intro  
 * Figma  
 * Images  
+* Here is the link to the project on github. 
+https://github.com/LouisTT93/se_project_spots
   
 **Intro**
   
