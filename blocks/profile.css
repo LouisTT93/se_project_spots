@@ -7,13 +7,16 @@
 .profile__image {
   max-height: 190px;
   max-width: 190px;
+  border-radius: 8px;
 }
 
 .profile__avatar {
-  list-style-type: none;
   margin-top: 0;
+  border-radius: 8px;
   margin-bottom: 0;
   padding-left: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .profile__title {
@@ -29,6 +32,7 @@
   line-clamp: 3;
   overflow: hidden;
   max-height: 96px;
+  color: #212121b2;
 }
 
 .profile__subtitle {
@@ -40,7 +44,7 @@
   line-height: 16px;
   letter-spacing: 0%;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: auto;
   display: -webkit-box;
   box-orient: vertical;
   line-clamp: 3;
@@ -48,7 +52,7 @@
   color: #212121b2;
 }
 
-.profile__edit-profile {
+.profile__edit {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -58,7 +62,6 @@
   font-size: 16px;
   line-height: 16px;
   letter-spacing: 0%;
-  margin-top: 0 auto;
   margin-bottom: 0;
   border-style: none;
   background-color: #fcf5e5;
@@ -68,16 +71,8 @@
   padding-left: 0;
 }
 
-.profile__edit-profile:hover {
+.profile__edit:hover {
   opacity: 100%;
-  transform: scale(1.1);
-  color: #212121;
-}
-
-.profile__favicon:hover {
-  opacity: 100%;
-  transform: scale(1.1);
-  color: #212121;
 }
 
 .profile__button {
@@ -99,24 +94,24 @@
   margin-left: auto;
   color: #ffffff;
   background-color: #212121;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.profile__favicon {
+.profile__image-pencil {
   transition: opacity 0.1s ease-in-out 0.3s;
 }
 
-.profile__button__image {
+.profile__image-pencil:hover {
+  opacity: 100%;
+}
+
+.profile__image-symbol {
   width: 12px;
   height: 12px;
   border-width: 2px;
 }
 
 .profile__button:hover {
-  opacity: 80%;
-  transform: scale(1.1);
-  box-shadow: 0 4px 8px rgba(14, 3, 3, 0.2);
+  opacity: 100%;
 }
 
 @media screen and (max-width: 550px) {
@@ -124,10 +119,28 @@
     flex-direction: column;
     max-width: 288px;
     align-items: center;
+    justify-content: center;
   }
   .profile__image {
     width: 80px;
     height: 80px;
+  }
+
+  .profile__avatar {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+
+
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
   }
 
   .profile__title {
@@ -136,16 +149,16 @@
     font-size: 20px;
     line-height: 20px;
     text-align: center;
-    width: 100%;
+    max-width: 288px;
     max-height: 60px;
   }
   .profile__subtitle {
     margin-top: 6px;
     text-align: center;
-    width: 100%;
+    max-width: 288px;
     max-height: 48px;
   }
-  .profile__edit-profile {
+  .profile__edit {
     margin: auto;
     margin-top: 32px;
     padding-bottom: 20px;
