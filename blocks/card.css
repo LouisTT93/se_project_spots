@@ -1,25 +1,24 @@
 .card {
   max-width: 413px;
-  max-height: 445px;
+  height: 413px;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.card__button {
+.card__like-button {
+  border: 2px;
   border-style: outset;
-  height: 23px;
+  height: 20px;
+  width: 23px;
   border-style: none;
   background-color: #fcf5e5;
+  color: #212121;
 }
 
 .card__image {
-  width: 100%;
+  width: 413px;
   height: 100%;
   border-radius: 8px;
-}
-
-.card__icon:hover {
-  opacity: 100%;
 }
 
 .card__description {
@@ -42,10 +41,15 @@
   width: 23px;
   height: 20px;
   opacity: 0.4;
-  top: 425px;
-  left: 390px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+
+.card__icon:hover {
+  cursor: pointer;
+  opacity: 100%;
+}
+
 
 .card__content {
   display: flex;
