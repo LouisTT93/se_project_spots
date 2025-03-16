@@ -35,7 +35,7 @@
   overflow: hidden;
 }
 
-.card__icon {
+.card__heart {
   display: flex;
   justify-self: flex-end;
   width: 23px;
@@ -45,7 +45,7 @@
 }
 
 
-.card__icon:hover {
+.card__heart:hover {
   cursor: pointer;
   opacity: 100%;
 }
