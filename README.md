@@ -14,8 +14,7 @@ This is a site for image sharing.
 
 This page is live, and you can get there by the link below.
 
-- Here is the link to the project on github.
-  https://github.com/LouisTT93/se_project_spots
+- [Deployment Link](https://louistt93.github.io/se_project_spots/)
 
 **Figma**
 
@@ -25,6 +24,6 @@ This page is live, and you can get there by the link below.
 
 Here is a link to a video where I describe different pieces of this project.
 
-https://drive.google.com/file/d/1EO1pbzZ4bdVVx273nMe_A9PayxyeQp3U/view
+[Images Link](https://drive.google.com/file/d/1EO1pbzZ4bdVVx273nMe_A9PayxyeQp3U/view)
 
 Thank you for watching my video of explanation.
