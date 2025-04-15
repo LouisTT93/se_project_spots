@@ -6,13 +6,13 @@
 }
 
 .card__like-button {
-  border: 2px;
-  border-style: outset;
   height: 20px;
   width: 23px;
   border-style: none;
-  background-color: #fcf5e5;
-  color: #212121;
+  background-color: transparent;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .card__image {
@@ -33,6 +33,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  color: #212121;
 }
 
 .card__heart {
@@ -44,12 +45,10 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
 .card__heart:hover {
   cursor: pointer;
   opacity: 100%;
 }
-
 
 .card__content {
   display: flex;
