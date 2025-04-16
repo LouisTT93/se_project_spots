@@ -126,6 +126,7 @@
   .profile {
     flex-direction: column;
     max-width: 288px;
+    margin-top: 20px;
     align-items: center;
     justify-content: center;
   }
