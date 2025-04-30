@@ -11,10 +11,15 @@
   justify-content: center;
   align-items: center;
   background-color: #00000066;
+  opacity: 0;
+  transition: opacity 1s ease, visibility 1s ease;
+  pointer-events: none;
 }
 
 .modal_is-opened {
+  opacity: 1;
   visibility: visible;
+  pointer-events: auto;
 }
 
 .modal__btn-img {
@@ -33,7 +38,6 @@
   padding-top: 104px;
   overflow-x: hidden;
 }
-
 
 .modal__close-btn {
   position: absolute;
@@ -93,6 +97,18 @@
   opacity: 40%;
 }
 
+.modal__input-name {
+}
+
+.modal__input-description {
+}
+
+.modal__input-image {
+}
+
+.modal__input-caption {
+}
+
 .modal__input:hover {
   cursor: pointer;
   border: 1px solid #212121;
@@ -101,6 +117,7 @@
 .modal__input:focus {
   opacity: 100%;
   border: 1px solid #21212166;
+  color: #212121;
 }
 
 .modal__submit-btn {
