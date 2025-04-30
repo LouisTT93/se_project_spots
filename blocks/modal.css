@@ -22,6 +22,11 @@
   pointer-events: auto;
 }
 
+.modal_is-closing {
+  opacity: 0;
+  visibility: hidden;
+}
+
 .modal__btn-img {
   height: 40px;
   width: 40px;
