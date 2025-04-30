@@ -3,7 +3,6 @@ const editProfileModal = document.querySelector("#edit-profile-modal");
 const modalCloseButton = editProfileModal.querySelector(".modal__close-btn");
 
 proEditBtn.addEventListener("click", function () {
-  console.log("hello");
   editProfileModal.classList.add("modal_is-opened");
 });
 modalCloseButton.addEventListener("click", function () {
@@ -32,18 +31,10 @@ const proSubmitBtn = document.querySelector("#pro-submit-btn");
 nameInput.placeholder = profileName.textContent;
 descriptionInput.placeholder = profileDescription.textContent;
 
-function closeModalSmooth() {
-  proForm.addEventListener("transitionend", function handleTransitionEnd() {
-    editProfileModal.classList.remove("modal_is-opened");
-    editProfileModal.removeEventListener("transitionend", handleTransitionEnd);
-  });
-}
-
 proForm.addEventListener("submit", function (event) {
   event.preventDefault();
   profileName.textContent = nameInput.value;
   profileDescription.textContent = descriptionInput.value;
-  closeModalSmooth();
   editProfileModal.classList.remove("modal_is-opened");
 });
 
@@ -55,7 +46,7 @@ const postSaveBtn = document.querySelector("#post-save-btn");
 
 postForm.addEventListener("submit", function (event) {
   event.preventDefault();
-  newPostModal.classList.add("modal_is-opened");
+  newPostModal.classList.remove("modal_is-opened");
 });
 console.log("New Post Link:", imageInput.value);
 console.log("New Post Title:", captionInput.value);
