@@ -3,6 +3,8 @@ const editProfileModal = document.querySelector("#edit-profile-modal");
 const modalCloseButton = editProfileModal.querySelector(".modal__close-btn");
 
 proEditBtn.addEventListener("click", function () {
+  nameInput.value = profileName.textContent;
+  descriptionInput.value = profileDescription.textContent;
   editProfileModal.classList.add("modal_is-opened");
 });
 modalCloseButton.addEventListener("click", function () {
@@ -22,14 +24,10 @@ newPostCloseButton.addEventListener("click", function () {
 });
 
 const proForm = document.querySelector("#pro-form");
-const nameInput = document.querySelector(".modal__input-name");
-const descriptionInput = document.querySelector(".modal__input-description");
+const nameInput = document.querySelector("#card-caption-input");
+const descriptionInput = document.querySelector("#profile-description-input");
 const profileName = document.querySelector(".profile__title");
 const profileDescription = document.querySelector(".profile__subtitle");
-const proSubmitBtn = document.querySelector("#pro-submit-btn");
-
-nameInput.placeholder = profileName.textContent;
-descriptionInput.placeholder = profileDescription.textContent;
 
 proForm.addEventListener("submit", function (event) {
   event.preventDefault();
@@ -39,14 +37,12 @@ proForm.addEventListener("submit", function (event) {
 });
 
 const postForm = document.querySelector("#post-form");
-const imageInput = document.querySelector(".modal__input-image");
-const captionInput = document.querySelector(".modal__input-caption");
-
-const postSaveBtn = document.querySelector("#post-save-btn");
+const imageInput = document.querySelector("#card-image-input");
+const captionInput = document.querySelector("#card-description-inpu");
 
 postForm.addEventListener("submit", function (event) {
   event.preventDefault();
+  console.log("New Post Link:", imageInput);
+  console.log("New Post Title:", captionInput);
   newPostModal.classList.remove("modal_is-opened");
 });
-console.log("New Post Link:", imageInput.value);
-console.log("New Post Title:", captionInput.value);
