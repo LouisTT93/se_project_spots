@@ -24,8 +24,8 @@ newPostCloseButton.addEventListener("click", function () {
 });
 
 const proForm = document.querySelector("#pro-form");
-const nameInput = document.querySelector("#card-caption-input");
-const descriptionInput = document.querySelector("#profile-description-input");
+const nameInput = proForm.querySelector("#card-caption-input");
+const descriptionInput = proForm.querySelector("#profile-description-input");
 const profileName = document.querySelector(".profile__title");
 const profileDescription = document.querySelector(".profile__subtitle");
 
