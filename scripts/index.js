@@ -52,34 +52,50 @@ function logCaption() {
   console.log("New Post Title:", captionInput);
 }
 
+function openModal(modal) {
+  if (modal === editProfileModal) {
+    editProfileModal.classList.add("modal_is-opened");
+  } else if ((modal = newPostModal)) {
+    return newPostModal.classList.add("modal_is-opened");
+  }
+}
+
+function closeModal(modal) {
+  if (modal === editProfileModal) {
+    return editProfileModal.classList.remove("modal_is-opened");
+  } else if ((modal = newPostModal)) {
+    return newPostModal.classList.remove("modal_is-opened");
+  }
+}
+
 proEditBtn.addEventListener("click", function () {
   nameInput.value = profileName.textContent;
   descriptionInput.value = profileDescription.textContent;
-  editProfileModal.classList.add("modal_is-opened");
+  openModal(editProfileModal);
 });
 modalCloseButton.addEventListener("click", function () {
   editProfileModal.classList.remove("modal_is-opened");
 });
 
 proAddBtn.addEventListener("click", function () {
-  newPostModal.classList.add("modal_is-opened");
+  openModal(newPostModal);
 });
 
 newPostCloseButton.addEventListener("click", function () {
-  newPostModal.classList.remove("modal_is-opened");
+  closeModal(newPostModal);
 });
 
 proForm.addEventListener("submit", function (event) {
   event.preventDefault();
   profileName.textContent = nameInput.value;
   profileDescription.textContent = descriptionInput.value;
-  editProfileModal.classList.remove("modal_is-opened");
+  closeModal(editProfileModal);
 });
 
 postForm.addEventListener("submit", function (event) {
   event.preventDefault();
   logCaption(postForm);
-  newPostModal.classList.remove("modal_is-opened");
+  closeModal(newPostModal);
 });
 
 function handleLike(evt) {
