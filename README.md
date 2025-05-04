@@ -8,7 +8,9 @@ This is a site for image sharing.
 
 - HTML
 - CSS
+- Positioning done with display:Flexbox/Flex/& Grid 
 - Responsive Design
+- Javascript
 
 #### Deployment :
 
