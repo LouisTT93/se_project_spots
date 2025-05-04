@@ -56,15 +56,15 @@ function openModal(modal) {
   if (modal === editProfileModal) {
     editProfileModal.classList.add("modal_is-opened");
   } else if ((modal = newPostModal)) {
-    return newPostModal.classList.add("modal_is-opened");
+    newPostModal.classList.add("modal_is-opened");
   }
 }
 
 function closeModal(modal) {
   if (modal === editProfileModal) {
-    return editProfileModal.classList.remove("modal_is-opened");
+    editProfileModal.classList.remove("modal_is-opened");
   } else if ((modal = newPostModal)) {
-    return newPostModal.classList.remove("modal_is-opened");
+    newPostModal.classList.remove("modal_is-opened");
   }
 }
 
