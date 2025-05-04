@@ -54,6 +54,10 @@
   opacity: 100%;
 }
 
+.modal__close-btn_preview {
+  background-image: url(/images/Property-1=Variant3.svg);
+}
+
 .modal__title {
   font-weight: 500;
   font-size: 32px;
