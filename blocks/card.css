@@ -17,6 +17,7 @@
   background-position: center;
   background-color: transparent;
   border: none;
+  padding: 0;
 }
 
 .card__delete:hover {
@@ -31,6 +32,16 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  padding: 0;
+}
+.card__like-button-active {
+  background-image: url(/images/State=Liked.svg);
+  border: none;
+  padding: 0;
+  opacity: 1;
+}
+.card__like-button-active:hover {
+  opacity: 0.4;
 }
 
 .card__image {
@@ -39,7 +50,7 @@
   border-radius: 8px;
 }
 
-.card__description {
+.card__title {
   text-align: start;
   max-width: 413px;
   margin-top: 0;
@@ -87,11 +98,11 @@
 
 @media screen and (max-width: 550px) {
   .card__image {
-    width: 288px;
-    height: 288px;
+    width: 100%;
+    height: 100%;
     flex-shrink: 1;
   }
-  .card__description {
+  .card__title {
     font-size: 16px;
     line-height: 16px;
     width: 100%;
@@ -100,8 +111,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
+    width: 288px;
+    height: 288px;
     justify-content: center;
+    flex-shrink: 1;
   }
   .card__content {
     width: 288px;

@@ -37,7 +37,28 @@
   position: relative;
 }
 
+.modal__preview {
+  max-width: 80vw;
+  max-height: 80vh;
+  background-color: transparent;
+  padding: 0;
+  position: relative;
+}
+.modal__image {
+  max-width: 80vw;
+  max-height: 80vh;
+  border-radius: 4px;
+}
+
+.modal__caption {
+  line-height: 120%;
+  letter-spacing: 0%;
+  font-size: 16px;
+  color: #ffffff;
+}
+
 .modal__close-btn {
+  background-image: url(/images/Property-1=Variant3.svg);
   position: absolute;
   top: 32px;
   right: 50px;
@@ -56,6 +77,14 @@
 
 .modal__close-btn_preview {
   background-image: url(/images/Property-1=Variant3.svg);
+  opacity: 1;
+  top: 0;
+  right: -52.5px;
+}
+
+.modal__close-btn_preview:hover {
+  cursor: pointer;
+  opacity: 40%;
 }
 
 .modal__title {
@@ -145,5 +174,14 @@
   .modal__close-btn {
     top: 12px;
     right: 12px;
+  }
+
+  .modal__close-btn_preview {
+    top: -41px;
+    right: 0;
+  }
+
+  .modal__image {
+    max-width: 288px;
   }
 }

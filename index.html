@@ -62,126 +62,27 @@
         </button>
       </section>
 
-      <div class="cards">
-        <div class="card">
-          <img
-            src="./images/1-photo-by-moritz-feldmann-from-pexels.jpg"
-            class="card__image"
-            alt="photo by moritz feldman"
-          />
-          <button class="card__delete"></button>
+      <section class="cards">
+        <ul class="cards__list">
+          <template id="card-template">
+            <li class="card">
+              <img src="" class="card__image" alt="" />
+              <button class="card__delete"></button>
 
-          <div class="card__content">
-            <p class="card__description">Val Thorens</p>
-            <button class="card__like-button" type="button">
-              <img
-                src="./images/Like-Icon.svg"
-                alt="heart icon for likes"
-                class="card__heart"
-              />
-            </button>
-          </div>
-        </div>
-        <!-- Thislineisforseperationvisuallyonly -->
-        <div class="card">
-          <img
-            src="./images/2-photo-by-ceiline-from-pexels.jpg"
-            class="card__image"
-            alt="photo by ceiline"
-          />
-          <button class="card__delete"></button>
-          <div class="card__content">
-            <p class="card__description">Restaurant terrace</p>
-            <button class="card__like-button" type="button">
-              <img
-                src="./images/Like-Icon.svg"
-                alt="heart icon for likes"
-                class="card__heart"
-              />
-            </button>
-          </div>
-        </div>
-
-        <!-- Thislineisforseperationvisuallyonly -->
-        <div class="card">
-          <img
-            src="./images/3-photo-by-tubanur-dogan-from-pexels.jpg"
-            class="card__image"
-            alt="photo by tubanur dogan"
-          />
-          <button class="card__delete"></button>
-          <div class="card__content">
-            <p class="card__description">An outdoor cafe</p>
-            <button class="card__like-button" type="button">
-              <img
-                src="./images/Like-Icon.svg"
-                alt="heart icon for likes"
-                class="card__heart"
-              />
-            </button>
-          </div>
-        </div>
-
-        <!-- Thislineisforseperationvisuallyonly -->
-        <div class="card">
-          <img
-            src="./images/4-photo-by-maurice-laschet-from-pexels.jpg"
-            class="card__image"
-            alt="photo by maurice laschet"
-          />
-          <button class="card__delete"></button>
-          <div class="card__content">
-            <p class="card__description">A very long bridge, over the forest</p>
-            <button class="card__like-button" type="button">
-              <img
-                src="./images/Like-Icon.svg"
-                alt="heart icon for likes"
-                class="card__heart"
-              />
-            </button>
-          </div>
-        </div>
-
-        <!-- Thislineisforseperationvisuallyonly -->
-        <div class="card">
-          <img
-            src="./images/5-photo-by-van-anh-nguyen-from-pexels.jpg"
-            class="card__image"
-            alt="photo by van anh nguyen"
-          />
-          <button class="card__delete"></button>
-          <div class="card__content">
-            <p class="card__description">Tunnel with morning light</p>
-            <button class="card__like-button" type="button">
-              <img
-                src="./images/Like-Icon.svg"
-                alt="heart icon for likes"
-                class="card__heart"
-              />
-            </button>
-          </div>
-        </div>
-
-        <!-- Thislineisforseperationvisuallyonly -->
-        <div class="card">
-          <img
-            src="./images/6-photo-by-moritz-feldmann-from-pexels.jpg"
-            alt="mountain house"
-            class="card__image"
-          />
-          <button class="card__delete"></button>
-          <div class="card__content">
-            <p class="card__description">Mountain house</p>
-            <button class="card__like-button" type="button">
-              <img
-                src="./images/Like-Icon.svg"
-                alt="heart icon for likes"
-                class="card__heart"
-              />
-            </button>
-          </div>
-        </div>
-      </div>
+              <div class="card__content">
+                <p class="card__title"></p>
+                <button class="card__like-button" type="button">
+                  <img
+                    src="./images/Like-Icon.svg"
+                    alt="heart icon for likes"
+                    class="card__heart"
+                  />
+                </button>
+              </div>
+            </li>
+          </template>
+        </ul>
+      </section>
     </main>
     <footer class="footer">
       <p class="footer__description">2023 © Spots</p>
@@ -265,12 +166,17 @@
         </form>
       </div>
     </div>
-    <div class="modal__preview">
-      <button class="modal__close-btn modal__close-btn_preview"></button>
 
-      <img src="#" alt="" class="modal__image" />
-      <p></p>
+    <div class="modal" id="modal-preview-image">
+      <div class="modal__preview">
+        <img src="#" alt="" class="modal__image" />
+
+        <button class="modal__close-btn modal__close-btn_preview"></button>
+
+        <p class="modal__caption"></p>
+      </div>
     </div>
+
     <script src="./scripts/index.js"></script>
   </div>
 </html>

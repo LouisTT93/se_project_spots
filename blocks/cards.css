@@ -1,14 +1,19 @@
 .cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 413px);
-  margin: auto;
-  justify-content: center;
-  gap: 40px 20px;
-  background-color: #fcf5e5;
-  max-width: 1280px;
   padding-top: 20px;
   padding-bottom: 40px;
+  background-color: #fcf5e5;
   border-bottom: 1px solid #21212166;
+}
+
+.cards__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 413px);
+  justify-content: center;
+  gap: 40px 20px;
+  max-width: 1280px;
+  margin: auto;
+  padding: 0;
 }
 
 @media screen and (max-width: 550px) {
@@ -16,5 +21,9 @@
     gap: 20px;
     padding-bottom: 20px;
     grid-template-columns: 288px;
+  }
+  .cards__list {
+    max-width: 288px;
+    grid-template-columns: repeat(auto-fit, 288px);
   }
 }
