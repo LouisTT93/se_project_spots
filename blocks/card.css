@@ -120,4 +120,8 @@
     width: 288px;
     align-items: center;
   }
+  .card__delete {
+    top: 3px;
+    right: 10px;
+  }
 }

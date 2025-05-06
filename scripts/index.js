@@ -101,7 +101,7 @@ function getCardElement(data) {
   });
 
   cardDeleteBtn.addEventListener("click", () => {
-    cardDeleteBtn.closest(".card").remove();
+    cardElement.remove();
   });
 
   cardImageEl.addEventListener("click", function () {
@@ -150,8 +150,6 @@ profileForm.addEventListener("submit", function (event) {
 });
 
 postForm.addEventListener("submit", function (event) {
-  event.preventDefault();
-
   const inputValues = {
     name: captionInput.value,
     link: imageInput.value,
@@ -160,13 +158,9 @@ postForm.addEventListener("submit", function (event) {
   const cardElement = getCardElement(inputValues);
   cardList.prepend(cardElement);
   closeModal(newPostModal);
+
+  event.preventDefault();
 });
-
-// like-event is below
-
-function handleLike(evt) {
-  evt.target.classList.toggle("card__heart-active");
-}
 
 // forEach function for getting all the cards
 

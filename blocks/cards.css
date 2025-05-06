@@ -18,12 +18,17 @@
 
 @media screen and (max-width: 550px) {
   .cards {
+    display: flex;
+    justify-items: center;
     gap: 20px;
     padding-bottom: 20px;
     grid-template-columns: 288px;
+    max-width: 288px;
+    margin: auto;
   }
   .cards__list {
     max-width: 288px;
     grid-template-columns: repeat(auto-fit, 288px);
+    gap: 50px;
   }
 }
