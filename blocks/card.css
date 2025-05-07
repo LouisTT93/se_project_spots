@@ -72,36 +72,7 @@
   overflow: hidden;
   color: #212121;
 }
-/*  
-.card__heart {
-  display: flex;
-  justify-self: flex-end;
-  width: 23px;
-  height: 20px;
-  opacity: 0.4;
-  padding-top: 12px;
-  padding-bottom: 36px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 
-.card__heart:hover {
-  cursor: pointer;
-  opacity: 100%;
-}
-
-.card__heart-active {
-  background-image: url(/images/Union.svg);
-  background-repeat: none;
-  background-size: cover;
-  background-position: center;
-  background-color: transparent;
-  border: none;
-}
-
-.card__heart-active:hover {
-  opacity: 50%;
-}
-*/
 .card__content {
   display: flex;
   justify-content: space-between;
