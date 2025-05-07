@@ -38,12 +38,11 @@
 }
 
 .modal__preview {
-  max-width: 80vw;
-  max-height: 80vh;
   background-color: transparent;
   padding: 0;
   position: relative;
 }
+
 .modal__image {
   max-width: 80vw;
   max-height: 80vh;
@@ -53,8 +52,16 @@
 .modal__caption {
   line-height: 120%;
   letter-spacing: 0%;
-  font-size: 16px;
+  font-size: 20px;
   color: #ffffff;
+  border-radius: 8px;
+  background-color: black;
+  width: fit-content;
+  padding: 4px 8px;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 10px);
 }
 
 .modal__close-btn {
@@ -76,7 +83,6 @@
 }
 
 .modal__close-btn_preview {
-  background-image: url(/images/Property-1=Variant3.svg);
   opacity: 1;
   top: 0;
   right: -52.5px;
@@ -181,8 +187,14 @@
     right: 0;
   }
 
+  .modal__preview {
+    width: 288px;
+  }
+
   .modal__image {
-    max-width: 80vw;
-    max-height: 80vh;
+    max-width: 100%;
+  }
+  .modal__caption {
+    font-size: 16px;
   }
 }

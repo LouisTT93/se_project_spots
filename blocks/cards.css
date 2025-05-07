@@ -21,7 +21,7 @@
     display: flex;
     justify-items: center;
     gap: 20px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     grid-template-columns: 288px;
     max-width: 288px;
     margin: auto;
