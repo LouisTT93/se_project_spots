@@ -150,6 +150,8 @@ profileForm.addEventListener("submit", function (event) {
 });
 
 postForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+
   const inputValues = {
     name: captionInput.value,
     link: imageInput.value,
@@ -158,8 +160,7 @@ postForm.addEventListener("submit", function (event) {
   const cardElement = getCardElement(inputValues);
   cardList.prepend(cardElement);
   closeModal(newPostModal);
-
-  event.preventDefault();
+  postForm.reset();
 });
 
 // forEach function for getting all the cards

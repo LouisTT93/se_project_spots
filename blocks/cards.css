@@ -1,5 +1,5 @@
 .cards {
-  padding-top: 20px;
+  padding-top: 0;
   padding-bottom: 40px;
   background-color: #fcf5e5;
   border-bottom: 1px solid #21212166;
@@ -21,14 +21,16 @@
     display: flex;
     justify-items: center;
     gap: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     grid-template-columns: 288px;
     max-width: 288px;
     margin: auto;
+    margin-top: 0;
   }
   .cards__list {
-    max-width: 288px;
-    grid-template-columns: repeat(auto-fit, 288px);
+    display: flex;
+    flex-direction: column;
     gap: 50px;
+    max-width: 288px;
   }
 }
